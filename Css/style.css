@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: url(../img/background.gif) no-repeat center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.container {
+    background: #66a0ff;
+    padding: 20px;
+    width: 420px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+form input, form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form input {
+    flex: 1;
+}
+
+form button {
+    background-color: #272aff;
+    color: white;
+    cursor: pointer;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.controls select, .controls button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.controls button {
+    background-color: #ff8181;
+    color: white;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr {
+    background: #7eb4ff;
+}
+
+tbody tr + tr {
+    margin-top: 5px;
+}
+
+.empty {
+    text-align: center;
+    color: #ffffff;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #ffffff;
+}
+
+.action-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.status-select {
+    border-radius: 5px;
+    appearance: none;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid #000000;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.status-select.pending {
+    background-color: #ffeb3b;
+    color: #333;
+}
+
+.status-select.completed {
+    background-color: #4caf50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #ff8181;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #000000;
+}

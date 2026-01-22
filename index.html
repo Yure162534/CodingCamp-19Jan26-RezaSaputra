@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JustHello</title>
+        <link rel="stylesheet" href="Css\style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>To Do List</h1>
+            <hr>
+            <form id="todoForm">
+                <input type="text" placeholder="Add Todo..." id="taskInput">
+                <input type="date" id="dateInput">
+                <button type="submit"> + </button>
+            </form>
+            <hr>
+            <div class ="controls">
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="pending">Pending</option>
+                    <option value="completed">Completed</option>
+                </select>
+                <button id="deleteAll">Delete All</button>
+            </div>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="todoList">
+                    <tr>
+                        <td colspan="4" class="empty">No Task Found</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="Js\script.js"></script>
+    </body>
+    <footer>
+        &copy; 2026 Reza Saputra. All rights reserved.
+    </footer>
+</html>
