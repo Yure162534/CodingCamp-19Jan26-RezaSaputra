@@ -13,10 +13,13 @@ body {
     color: white;
 }
 
+
+
 .container {
     background: #66a0ff;
     padding: 20px;
-    width: 420px;
+    width: 90%;
+    max-width: 420px;
     border-radius: 10px;
 }
 
@@ -64,6 +67,11 @@ form button {
     cursor: pointer;
 }
 
+.controls button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -93,19 +101,19 @@ tbody tr + tr {
     color: #ffffff;
 }
 
-.action-btn {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.status-select {
+.statusSelect {
     border-radius: 5px;
     appearance: none;
     text-align: center;
     padding: 5px 10px;
     border: 1px solid #000000;
+}
+
+@media (max-width: 480px) {
+    th, td {
+        padding: 5px;
+        font-size: 12px;
+    }
 }
 
 footer {
@@ -114,17 +122,17 @@ footer {
     color: white;
 }
 
-.status-select.pending {
+.statusSelect.pending {
     background-color: #ffeb3b;
     color: #333;
 }
 
-.status-select.completed {
+.statusSelect.completed {
     background-color: #4caf50;
     color: white;
 }
 
-.delete-btn {
+.deleteBtn {
     background-color: #ff8181;
     color: white;
     border-radius: 5px;
